@@ -1,21 +1,38 @@
-//3] write a function to find first 10 even square numbers?(tracing, stack memory diagram ,comments for logic)
+//design a function to return the area of square and print it in main function.
 
 class A{
-	public static void main (String args[]){
-	System.out.println("main start");
-	squ();
-	System.out.println("main end");
-	return;
+	public static void main(String args[]){
+        int area; // initialization 
+        area=square(); // calling the square fuction and fetching area from other function
+        System.out.println(area);// printing the area
+       return;// returning control to jvm
 	}
-	public static void squ(){
-	System.out.println("func start");
-	int n;
-	for(n=0;n<=10;n++){
-		if(n%2==0 && n==(n*n/2)){
-	System.out.println(n);
-	System.out.println("func end");
-	return;
-	}
-	}
+	public static int square(){
+		int s=2;// initializing 
+		int area=s*s;//initializing
+		return area;// returning the area to main function
 	}
 }
+
+
+/* TRACING 
+ area=square()
+ s=2
+ area= 2*2
+ return 4 to main 
+ print 4
+ return to jvm*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
